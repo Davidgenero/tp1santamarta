@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*---- MOBILE FIRST */
+
+body{
+    font-size: 1rem;
+    background-color: rgb(180, 195, 195);
+}
+
+h1{
+    font-size: 60px;
+}
+
+.item1{
+    background-color: rgb(144, 90, 196);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.item img{
+    width: 60%;
+}
+
+.item2{
+    background-color: darkmagenta;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.nuezpartida{
+    display: flex;
+}
+
+.item2 img{
+    width: 80%;
+}
+
+.texto{
+    font-size: 1.4rem;
+    color: white;
+    padding: 2rem;
+
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+     padding: 2rem;
+}
+
+footer{
+    background-color: darkred;
+    color: azure
+    
+}
+/* -----TABLETAS */
+@media (min-width: 768px){
+    body{
+        background-color: cyan;
+    }
+    
+    .item1{
+        display: none;
+    }
+
+    .item2{
+        flex-direction: row;
+    }
+
+    .nuezpartida{
+         
+    }
+
+    .texto{
+        width: 50%;
+    }
+
+}
+
+/* -----ESCRITORIO NORMAL */
+
+@media (min-width:992px){
+    body{
+        background-color: darkcyan;
+    }
+
+    .item1{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+    }
+}
