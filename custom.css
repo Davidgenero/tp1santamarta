@@ -14,10 +14,11 @@
 .headerImagen{
     background-image: url(./assets/img/cucharanueces.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    align-self: center;
+    /* justify-content: flex-start; */
+    background-size: cover;
     width: 100vw;
-    height: 40vh;
-    
+    height: 70vw;
 }
 .navbar-brand{
     background-image: url(./assets/img/mariposasola.jpg)
