@@ -19,6 +19,7 @@ app.set ('view engine', 'hbs');
 app.use(express.static('public'))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+hbs.registerPartials(__dirname+'/views/partials')
 
 app.get('/', function(req, res) {
   res.render("home")

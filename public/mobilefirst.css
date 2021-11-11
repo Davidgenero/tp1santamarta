@@ -9,15 +9,16 @@
 body{
     
     font-size: 1rem;
-    background-color: rgb(180, 195, 195);
+    background-color:  rgb(94, 133, 92);
 }
 
 h1{
     font-size: 60px;
+    color: cornsilk;
 }
 
 .item1{
-    background-color: rgb(144, 90, 196);
+    background-color: rgb(76, 140, 73);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +34,7 @@ h1{
 }
 
 .item2{
-    background-color: darkmagenta;
+    background-color: rgb(67, 139, 0);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -61,11 +62,11 @@ h1{
      padding: 2rem;
 }
 
-footer{
+ /* .footer{
     background-color: darkred;
-    color: azure
+    color: azure 
     
-}
+} */
 /* -----TABLETAS */
 @media (min-width: 768px){
     body{
@@ -80,9 +81,9 @@ footer{
         flex-direction: row;
     }
 
-    .nuezpartida{
+    /* .nuezpartida{
          
-    }
+    } */
 
     .texto{
         width: 50%;
