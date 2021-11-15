@@ -15,6 +15,7 @@
         <table class="table table-striped" id="mytable">
             <thead>
                 
+                <th> Id de producto</th>
                 <th> Nombre</th>
                 <th> Presentacion</th>
                 <th> Precio</th>
@@ -24,7 +25,9 @@
                 <tr>
                     <td> {{ producto_id }}</td>
                     <td> {{ producto_nombre }}</td>
+                    <td> {{ producto_presentacion }} 
                     <td> {{ producto_precio }}</td>
+                     </td>
                     {{!-- <td><a href="javascript:void(0);" class="btn btn-info edit" data-id="{{ producto_id}}"
                             data-producto-nombre="{{ producto_nombre}}"
                             data-producto_precio="{{ producto_precio}}">Editar</a>

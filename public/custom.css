@@ -1,8 +1,18 @@
+/* home */
+
+
 .navbarHome{
+    
     font-weight: 500;
     font-size: 0.9rem;
     padding-left: 15rem;
     
+}
+.navbar-brand{
+    background-image: url(/img/mariposasola.jpg)
+    
+    
+       
 }
 
 .navbarHome li{
@@ -20,23 +30,42 @@
     width: 100vw;
     height: 70vw;
 }
-.navbar-brand{
-    background-image: url(/img/mariposasola.jpg)
-       
-}
 
 .img-80{
     width: 80%;
     align-self: center;
 }
 
+
+/* FOOTER */
+
 footer{
+
     background-color: rgb(192, 213, 191);
     font-weight: 500;
     font-size: 0.9rem;
 }
-.btn-Inicio {
+.text-muted{
+    padding-left: 2rem;
+}
+/* .btn-Inicio {
     color: rgb(26, 23, 23);
     background-color: rgb(192, 213, 191);
     border-color: #0e1110;
-  }
+  } */
+
+  /* Contacto */
+.img_contacto {
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    width: 100vw;
+    height: 50vw;
+}
+
+.img_wsp{
+    height: 10%;
+    width: 10%;
+    justify-content: center;
+}

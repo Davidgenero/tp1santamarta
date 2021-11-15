@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
-const bodyParser =require ('body-parser');
 const mysql = require('mysql');
 
 const app = express();
@@ -12,6 +11,8 @@ const port = process.env.PORT;
 // handlebars
 
 app.set ('view engine', 'hbs');
+// PROBANDO P CONECTAR
+app.set('views', path.join(__dirname,'views'));
 
 
 
@@ -20,6 +21,29 @@ app.use(express.static('public'))
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 hbs.registerPartials(__dirname+'/views/partials')
+
+// Conexión a la base de datos:
+const conn = mysql.createConnection({
+  host:'localhost',
+  user:'root',
+  password:'',
+  database:'pecan'
+})
+conn.connect((err) => {
+  if(err) throw err
+  console.log('Conexion establecida...')
+});
+
+app.get("/productos", (req, res) => {
+  let sql = "SELECT * FROM productos";
+  let query = conn.query(sql, (err, results) => {
+     if (err) throw err;
+     res.render("productos", {
+        results: results,
+     });
+    //  res.send(results);
+  });
+});
 
 app.get('/', function(req, res) {
   res.render("home")
@@ -50,20 +74,9 @@ app.get('/productos', function(req, res) {
   res.render("productos")
 }); 
 
-// Conexión a la base de datos:
-const conn = mysql.createConnection({
-  host:'localhost',
-  user:'root',
-  password:'',
-  database:'pecan'
-})
-conn.connect((err) => {
-  if(err) throw err
-  console.log('Conexion establecida...')
-});
 
-// PROBANDO P CONECTAR
-app.set('views', path.join(__dirname,'views'));
+
+
 
 
 // routes

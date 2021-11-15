@@ -1,7 +1,11 @@
+
+/* Publicaciones */
 *{
+    
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    
 }
 
 /*---- MOBILE FIRST */
@@ -17,8 +21,21 @@ h1{
     color: cornsilk;
 }
 
+.img_publicaciones{
+    height: 75%;
+    width: 75%;
+}
+
+.nuezpartida{
+    justify-content: center;
+    padding-top: 6rem;
+    height: 100%;
+    width: 100%;
+}
+
 .item1{
-    background-color: rgb(76, 140, 73);
+    
+    background-color: rgb(124, 181, 121);
     display: flex;
     flex-direction: column;
     align-items: center;
