@@ -11,13 +11,13 @@
     
     
 }
+
 .navbar-brand{
-    background-image: url(/img/mariposasola.jpg)
+    /* background-image: url(/img/mariposasola2.png) */
+    
+    
+    
    
-    
-    
-    
-       
 }
 
 .navbarHome li{
@@ -27,13 +27,7 @@
 }
 
 .headerImagen{
-    background-image: url(/img/cucharanueces.jpg);
-    background-repeat: no-repeat;
-    align-self: center;
-    /* justify-content: flex-start; */
-    background-size: cover;
-    width: 100vw;
-    height: 70vw;
+    margin: 1rem;
 }
 
 .img-80{
@@ -49,6 +43,7 @@ footer{
     background-color: rgb(192, 213, 191);
     font-weight: 500;
     font-size: 0.9rem;
+        
 }
 .text-muted{
     padding-left: 2rem;

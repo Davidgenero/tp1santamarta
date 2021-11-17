@@ -27,7 +27,7 @@ const conn = mysql.createConnection({
   host:'localhost',
   user:'root',
   password:'',
-  database:'pecan'
+  database:'genero_david'
 })
 conn.connect((err) => {
   if(err) throw err
