@@ -12,13 +12,13 @@
     
 }
 
-.navbar-brand{
+/* .navbar-brand{
     /* background-image: url(/img/mariposasola2.png) */
     
     
     
    
-}
+/* } */ 
 
 .navbarHome li{
 
@@ -39,12 +39,16 @@
 /* FOOTER */
 
 footer{
-
     background-color: rgb(192, 213, 191);
     font-weight: 500;
     font-size: 0.9rem;
-        
+    padding-left: 0%;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0px;
+    margin-bottom: 0px;
 }
+
 .text-muted{
     padding-left: 2rem;
 }
@@ -68,4 +72,34 @@ footer{
     height: 10%;
     width: 10%;
     justify-content: center;
+}
+
+.card-container{
+    grid-template-areas:
+    "imagen1 imagen1 imagen2 imagen2"
+    "tarjeta1 tarjeta2 tarjeta3 tarjeta4";
+}
+
+.imagencard1{
+    grid-area: imagen1;
+}
+
+.imagencard2{
+    grid-area: imagen2;
+}
+
+.Card1{
+    grid-area: tarjeta1;
+}
+
+.Card2{
+    grid-area: tarjeta2;
+}
+
+.Card3{
+    grid-area: tarjeta3;
+}
+
+.Card4{
+    grid-area: tarjeta4;
 }

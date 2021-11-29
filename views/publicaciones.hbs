@@ -1,72 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publicaciones</title>
-     <link rel="shortcut icon" href="/img/faviconmariposasola.jpg">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Publicaciones</title>
+        <link rel="shortcut icon" href="/img/faviconmariposasola.jpg">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="custom.css">
+        <link rel="stylesheet" href="mobilefirst.css">
+    </head>
 
-    <link rel="stylesheet" href="custom.css">
- 
-    
-    <link rel="stylesheet" href="mobilefirst.css">
-    
-    
-    
-</head>
-<body>
+    <body>
 
-    <h1>Novedades</h1>
-    {{!-- <div><a href="home" class="btn btn-Inicio">INICIO</a> --}}
+        <h1>Novedades</h1>
+        {{!-- <div><a href="home" class="btn btn-Inicio">INICIO</a> --}}
+        <div class="item1">
+            <div>
+                <img class="img_publicaciones" src="/img/snack_salado_corel1.png" alt="">
+            </div>
+            <div>
+                <img class="img_publicaciones" src="/img/snack_salado_corel4.png" alt="">
+            </div>
+            <div>
+                <img class="img_publicaciones" src="/img/snack_salado_corel3.png" alt="">
+            </div>
+            <div>
+                <img class="img_publicaciones" src="/img/snack_salado_corel2.png" alt="">
+            </div>
         </div>
 
-    <div class="item1">
+        <div class="item2">
+            <div class="nuezpartida">
+                <img src="/img/nuezsola1.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Nuevo snack tostado y salado de nuez Pecan.</h1>
+                Una alternativa para disfrutar de un snack saludable y listo para consumir.
+                Este nuevo Snack es ideal para complementar tus comidas y colaciones, aportando asi energia y sabor para tu dia a dia. 
+            </div>
+        </div>
+
         <div>
-            <img class="img_publicaciones" src="/img/snack_salado_corel1.png" alt="">
-        </div>
-        <div>
-            <img class="img_publicaciones" src="/img/snack_salado_corel4.png" alt="">
-        </div>
-        <div>
-            <img class="img_publicaciones" src="/img/snack_salado_corel3.png" alt="">
-        </div>
-        <div>
-            <img class="img_publicaciones" src="/img/snack_salado_corel2.png" alt="">
+            <div class= "video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I7pAOwesgpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </div>
 
-
-    </div>
-
-    <div class="item2">
-        <div class="nuezpartida">
-            <img src="/img/nuezsola1.png" alt="">
-        </div>
-        <div class="texto">
-            <h1>Nuevo snack tostado y salado de nuez Pecan.</h1>
-            Una alternativa para disfrutar de un snack saludable y listo para consumir.
-            Este nuevo Snack es ideal para complementar tus comidas y colaciones, aportando asi energia y sabor para tu dia a dia. 
-        </div>
-
-    </div>
-    <div>
-        <div class= "video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/I7pAOwesgpM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        </div>
-
-   
-  
-    
+        {{> footer}}
+        
+    </body>
 
 
-
-    {{> footer}}
-</body>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-
-  <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </html>

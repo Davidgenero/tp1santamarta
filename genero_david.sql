@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-11-2021 a las 21:05:49
+-- Tiempo de generación: 29-11-2021 a las 22:42:50
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.11
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `pecan`
+-- Base de datos: `genero_david`
 --
 
 -- --------------------------------------------------------
@@ -39,8 +39,10 @@ CREATE TABLE `productos` (
 --
 
 INSERT INTO `productos` (`producto_id`, `producto_nombre`, `producto_presentacion`, `producto_precio`) VALUES
-(1, 'NUEZ CON CASCARA', '500 grs', '$200'),
-(2, 'NUEZ PELADA', '100 grs', '$190');
+(1, 'NUEZ CON CASCARA ', '500 grs', '$200'),
+(2, 'NUEZ PELADA', '100 grs', '$190'),
+(3, 'NUEZ CARAMELIZADA', '100grs', '$270'),
+(4, 'SNACK SALADO DE NUEZ', '100 grs', '$250');
 
 --
 -- Índices para tablas volcadas
@@ -60,7 +62,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `producto_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `producto_id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
